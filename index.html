@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah's Shrek Birthday Bash</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+
+        .section {
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .shrek-green {
+            background-color: #3E8E41;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #2E7031;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #FFD700;
+        }
+
+        .btn {
+            background-color: #FFD700;
+            color: #4A2200;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FFA500;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px;
+            width: 90%;
+            height: auto;
+        }
+
+        form {
+            background: #2E7031;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #2E7031;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #welcome {
+            padding-top: 200px;
+        }
+        #welcome img {
+            max-width: 80vw;
+        }
+
+        #welcome p {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#welcome">Home</a>
+        <a href="#details">Details</a>
+        <a href="#activities">Activities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp">RSVP</a>
+    </div>
+
+    <section id="welcome" class="section">
+        <h1>Welcome to Isaiah's Shrek Birthday Bash!</h1>
+        <p>You're invited to the most ogre-tastic birthday celebration for Isaiah! Join us in the swamp for fun and adventure!</p>
+        <img src="https://media-api.xogrp.com/images/d91dc910-e678-453a-bb90-fdbff7120a0c~cr_0.0.1597.1070" alt="Shrek Party">
+    </section>
+
+    <section id="details" class="section shrek-green">
+        <h2>Party Details</h2>
+        <p><strong>When:</strong> Sunday, March 17th, 2:00 PM - 5:00 PM</p>
+        <p><strong>Where:</strong> The Enchanted Forest Park</p>
+        <p><strong>Dress Code:</strong> Shrek, Donkey, or your favorite fairy tale character!</p>
+    </section>
+
+    <section id="activities" class="section">
+        <h2>Fun Activities</h2>
+        <ul style="list-style: none;">
+            <li>🧅 Shrek's Onion Toss</li>
+            <li>🎭 Costume Contest</li>
+            <li>🍰 Swamp Cake Decorating</li>
+            <li>🐉 Dragon Pinata</li>
+            <li>🎶 Donkey's Karaoke Party</li>
+        </ul>
+    </section>
+
+    <section id="gallery" class="section shrek-green">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://example.com/shrek-fiona.jpg" alt="Shrek and Fiona">
+            <img src="https://example.com/shrek-cake.jpg" alt="Shrek Cake">
+            <img src="https://example.com/swamp-games.jpg" alt="Swamp Games">
+            <img src="https://example.com/toadstools.jpg" alt="Toadstools in the Swamp">
+        </div>
+    </section>
+
+    <section id="rsvp" class="section">
+        <h2>RSVP Now!</h2>
+        <p>Let us know if you're coming to Isaiah's party!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="number" placeholder="Number of Guests" min="1" required>
+            <button type="submit" class="btn">Send RSVP</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Isaiah's Birthday Bash | Made with ❤️ in the Swamp</p>
+    </footer>
+
+</body>
+</html>
