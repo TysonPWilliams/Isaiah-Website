@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+  }
+
+  .section {
+    padding: 10vh 20px;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shrek-green {
+    background-color: #3e8e41;
+  }
+  .shrek-lightgreen {
+    background-color: #4f8a51;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2e7031;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  .navbar a:hover {
+    color: #ffd700;
+  }
+
+  .btn {
+    background-color: #ffd700;
+    color: #4a2200;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 2vh;
+  }
+
+  .btn:hover {
+    background-color: #ffa500;
+  }
+
+  
+
+  .gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    width: 90%;
+    height: auto;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2e7031;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+
+  footer {
+    background: #2e7031;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #welcome {
+    /* padding-top: 5vh; */
+  }
+  #welcome img {
+    max-width: 80vw;
+  }
+
+  #welcome p {
+    padding-bottom: 20px;
+  }
+  #heading {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  #swamp {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 50vw;
+  }
+  #party_details {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    max-width: 80vw;
+  }
+  #rsvp img {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    max-width: 80vw;
+  }
+  #gallery-img {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    max-width: 80vw;
+  }

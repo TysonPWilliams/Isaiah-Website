@@ -4,150 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isaiah's Shrek Birthday Bash</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        background-color: #4caf50;
-        color: white;
-        text-align: center;
-      }
-
-      .section {
-        padding: 20vh 20px;
-        /* min-height: 100vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .shrek-green {
-        background-color: #3e8e41;
-      }
-      .shrek-lightgreen {
-        background-color: #4f8a51;
-      }
-
-      .navbar {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background-color: #2e7031;
-        padding: 15px 0;
-        text-align: center;
-        z-index: 1000;
-      }
-
-      .navbar a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        margin: 0 15px;
-        font-weight: bold;
-      }
-
-      .navbar a:hover {
-        color: #ffd700;
-      }
-
-      .btn {
-        background-color: #ffd700;
-        color: #4a2200;
-        font-weight: bold;
-        border-radius: 20px;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-      .btn:hover {
-        background-color: #ffa500;
-      }
-
-      .gallery img {
-        max-width: 100%;
-        border-radius: 10px;
-        margin: 10px;
-        width: 90%;
-        height: auto;
-      }
-
-      form {
-        background: #2e7031;
-        padding: 20px;
-        border-radius: 10px;
-        width: 90%;
-        max-width: 400px;
-      }
-
-      input {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: none;
-        border-radius: 5px;
-      }
-
-      footer {
-        background: #2e7031;
-        padding: 20px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-
-      #welcome {
-        /* padding-top: 5vh; */
-      }
-      #welcome img {
-        max-width: 80vw;
-      }
-
-      #welcome p {
-        padding-bottom: 20px;
-      }
-      #heading {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-      }
-      #swamp {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        width: 50vw;
-      }
-      #party_details {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        max-width: 80vw;
-      }
-      #rsvp img {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        max-width: 80vw;
-      }
-      #gallery-img {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        max-width: 80vw;
-      }
+      
     </style>
   </head>
   <body>
     <div class="navbar">
       <a href="#welcome">Home</a>
       <a href="#details">Details</a>
-      <a href="#activities">Activities</a>
-      <a href="#gallery">Gallery</a>
+      <!-- <a href="#activities">Activities</a> -->
       <a href="#rsvp">RSVP</a>
+      <a href="#gallery">Gallery</a>
     </div>
 
     <section id="welcome" class="section">
@@ -163,55 +31,55 @@
     </section>
 
     <section id="details" class="section shrek-green">
-      <img id="party_details" src="images/party_details.png" />
-      <p><strong>When:</strong> Sunday, March 23rd, 2:00 PM - 5:00 PM</p>
-      <p>
-        <strong>Where:</strong> The Enchanted Forest Park (Thompson's Beach-
-        Cobram)
-      </p>
-      <p>
-        <strong>Dress Code:</strong> Your favorite fairy tale character! Or
-        whatever you're comfortable in
-      </p>
-      <img id="swamp" src="images/what_are_you_doing.jpg" />
+        <img id="party_details" src="images/party_details.png" />
+        <p><strong>When:</strong> Sunday, March 23rd, 10:00 AM - 12:00 PM</p>
+        <p>
+            <strong>Where:</strong> The Enchanted Forest Park (Thompson's Beach-
+            Cobram)
+        </p>
+        <p>
+            <strong>Dress Code:</strong> Your favorite fairy tale creature! Or
+            whatever you're comfortable in
+        </p>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Isaiah%27s+Shrek+Birthday+Bash&dates=20250323T010000Z/20250323T030000Z&details=Join+us+for+an+ogre-tastic+celebration+at+Thompson%27s+Beach!&location=Thompson%27s+Beach,+Cobram,+Australia"
+            target="_blank" class="btn">
+  📅        Add to Google Calendar
+        </a>
+        <img id="swamp" src="images/what_are_you_doing.jpg" />
+        
     </section>
 
-    <!-- <section id="activities" class="section">
-        <h2>Fun Activities</h2>
-        <ul style="list-style: none;">
-            <li>🧅 Shrek's Onion Toss</li>
-            <li>🎭 Costume Contest</li>
-            <li>🍰 Swamp Cake Decorating</li>
-            <li>🐉 Dragon Pinata</li>
-            <li>🎶 Donkey's Karaoke Party</li>
-        </ul>
-    </section> -->
+    <section id="rsvp" class="section">
+        <img src="images/rsvp.png" />
+        <p>Let us know if you're coming to Isaiah's party!</p>
+        
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://formspree.io/f/mdkenwkd" method="POST">
+            <label>
+                Your Name 
+                <textarea name="name"></textarea>
+            </label>
+            <label>
+                Child's Name
+                <textarea name="childs-name"></textarea>
+            </label>
+            <label>
+                No of Guests:
+                <textarea name="guests"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
     <section id="gallery" class="section shrek-lightgreen">
       <img src="images/gallery.png" id="gallery-img" />
       <div class="gallery">
-        <img src="images/walking_murray.jpg" alt="Shrek and Fiona" />
-        <img src="images/cuddles.jpg" alt="Shrek Cake" />
-        <img src="images/christmas.jpg" alt="Swamp Games" />
+        <img src="images/walking_murray.jpg" alt="Walking along Murray together" />
+        <img src="images/cuddles.jpg" alt="Family holiday in Bright at Autumn" />
+        <img src="images/christmas.jpg" alt="Family photo at carols" />
+        <img src="images/school_photo.jpg" alt="Isaiah's first day photo">
       </div>
-    </section>
-
-    <section id="rsvp" class="section">
-      <img src="images/rsvp.png" />
-      <p>Let us know if you're coming to Isaiah's party!</p>
-      <!-- modify this form HTML and place wherever you want your form -->
-      <form action="https://formspree.io/f/mdkenwkd" method="POST">
-        <label>
-          Your name:
-          <textarea name="name"></textarea>
-        </label>
-        <label>
-          No of Guests:
-          <textarea name="guests"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-      </form>
     </section>
 
     <footer>
